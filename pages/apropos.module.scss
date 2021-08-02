@@ -1,0 +1,115 @@
+@media screen and (min-width: 1268px) {
+  .apropos {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0px;
+    margin: 0;
+    padding: 100px 200px;
+
+    .imageContainer {
+      background-color: #9d9d9d;
+      height: 400px;
+      width: 50%;
+    }
+    .descriptionContainer {
+      width: 50%;
+      margin-left: 70px;
+      height: 400px;
+      h1 {
+        font-weight: 900;
+        font-size: 2rem;
+      }
+      p {
+        color: #5a5a5a;
+        line-height: 30px;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+// @media screen and (max-width: 768px) {
+//   .apropos {
+//     background-color: #f8f9fa;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     box-sizing: border-box;
+//     overflow: hidden;
+//     margin: 0;
+//     height: 500px;
+//     .apropos__symbol {
+//       background-color: #272727;
+//       display: flex;
+//       justify-content: flex-start;
+//       width: 6%;
+//       border-radius: 10% 0% 0% 10%;
+//       padding: 4px;
+//     }
+
+//     .apropos__content {
+//       box-sizing: border-box;
+//       overflow: hidden;
+//       width: 100%;
+//       padding: 20px;
+//       &:after {
+//         content: "";
+//         position: absolute;
+//         height: 160px;
+//         width: 4px;
+//         background-color: #acacac;
+//         transform: translate(-136px, -200px);
+//         z-index: 1;
+//       }
+//       .apropos__image {
+//         padding: 10px 5px;
+//         background-color: #272727;
+//         width: 120px;
+//         height: 120px;
+//         display: flex;
+//         justify-content: center;
+//         border-radius: 100%;
+//         img {
+//           width: 60%;
+//           height: auto;
+//           object-fit: contain;
+//           margin-top: -1àpx;
+//         }
+//       }
+//       .apropos__title {
+//         color: #272727;
+//         font-weight: 900;
+//         font-size: 1.5em;
+//         line-height: 0.5;
+//         text-align: start;
+//         font-weight: 700;
+//         margin-bottom: 20px;
+//       }
+//       .apropos__info {
+//         color: #000;
+//         font-weight: 700;
+//         font-size: 1em;
+//         line-height: 18px;
+//         margin-bottom: 30px;
+//       }
+//       button {
+//         margin-top: 20px;
+//         padding: 10px;
+//         background-color: transparent;
+//         border: 3px solid #000;
+//         border-radius: 0;
+//         font-family: "Josefin Sans", sans-serif;
+//         font-weight: 900;
+//         cursor: pointer;
+//         background-color: #272727;
+//         color: #ffe73d;
+//         font-size: 0.5rem;
+//         &:active {
+//           outline: none;
+//         }
+//       }
+//     }
+//   }
+// }

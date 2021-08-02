@@ -1,0 +1,222 @@
+@media screen and (min-width: 1268px) {
+  .competence {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 150px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 1000px;
+      background-color: rgba($color: #ffe73d, $alpha: 0.3);
+      transform: translate(50px, 550px);
+      z-index: 1;
+    }
+
+    h2 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 3em;
+      line-height: 0.5;
+      text-align: start;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-weight: 700;
+    }
+
+    .competence__container {
+      line-height: 1.5em;
+      padding: 0;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 20px;
+        background-color: #acacac;
+        transform: translate(350px, 20px);
+      }
+      .competence__container__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        li {
+          list-style: none;
+          position: relative;
+          padding: 0 0 0 20px;
+          color: #ffe73d;
+          font-size: 15px;
+          font-weight: 400;
+          width: 40%;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: #ffe73d;
+            border-radius: 100%;
+          }
+        }
+        .niveau {
+          width: 500px;
+          display: flex;
+          justify-content: flex-start;
+          .niveauHtml {
+            width: 300px;
+            height: 7px;
+            background-color: #ffe73d;
+          }
+          .niveauCss {
+            width: 200px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauJs {
+            width: 260px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauJava {
+            width: 220px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauCsharp {
+            width: 120px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauDb {
+            width: 180px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .competence {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    h2 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 2em;
+      line-height: 0.5;
+      text-align: start;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-weight: 700;
+    }
+
+    .competence__container {
+      line-height: 1.5em;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-left: -100px;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 180px;
+        width: 10px;
+        background-color: #acacac;
+        transform: translate(200px, 20px);
+      }
+      .competence__container__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        li {
+          list-style: none;
+          position: relative;
+          padding: 0 0 0 20px;
+          color: #ffe73d;
+          font-size: 11px;
+          font-weight: 400;
+          width: 40%;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: #ffe73d;
+            border-radius: 100%;
+          }
+        }
+        .niveau {
+          width: 500px;
+          display: flex;
+          justify-content: flex-start;
+          .niveauHtml {
+            width: 200px;
+            height: 7px;
+            background-color: #ffe73d;
+          }
+          .niveauCss {
+            width: 100px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauJs {
+            width: 160px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauJava {
+            width: 120px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauCsharp {
+            width: 50px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+          .niveauDb {
+            width: 80px;
+            height: 10px;
+            background-color: #ffe73d;
+          }
+        }
+      }
+    }
+  }
+}

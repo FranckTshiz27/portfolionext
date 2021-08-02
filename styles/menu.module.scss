@@ -1,0 +1,128 @@
+.menu__main {
+  display: none;
+  .menu__btn {
+    display: none;
+    background-color: #fff;
+  }
+}
+.menu__container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+}
+.menu {
+  background-color: #272727;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  .navigation {
+    list-style: none;
+    display: flex;
+    .navigation__item {
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      transition: 1s;
+      margin: 12px;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 2px solid #ffe73d;
+      }
+    }
+    .navigation__item__active {
+      text-decoration: none;
+      color: #fff;
+      margin: 10px;
+      font-size: 15px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-bottom: 2px solid #ffe73d;
+      padding-bottom: 10px;
+    }
+  }
+
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__main {
+    display: flex;
+    padding: 5px;
+    .menu__btn {
+      display: flex;
+      background-color: #fff;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    padding: 10px;
+    .menu__main {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding-right: 50px;
+      .menu__btn {
+        display: flex;
+        background-color: #fff;
+      }
+    }
+    .menu__btn {
+      display: flex;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .navigation {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .navigation__item {
+        text-decoration: none;
+        color: #ffe73d;
+        margin: 5px;
+        font-size: 15px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        transition: 1s;
+        &:hover {
+          border: none;
+        }
+      }
+      .navigation__item__active {
+        text-decoration: none;
+        color: #ffe73d;
+        margin: 50px;
+        font-size: 15px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        border: none;
+      }
+    }
+  }
+}
+
+.visibileMenu {
+  display: flex;
+}
+
+.unVisibileMenu {
+  display: none;
+}
