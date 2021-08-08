@@ -1,7 +1,7 @@
 import Head from "next/head";
 import * as React from "react";
 import Image from "next/image";
-import { DiAptana } from "react-icons/di";
+import { DiAptana, DiBackbone } from "react-icons/di";
 import { FiChevronsDown } from "react-icons/fi";
 import TypeIt from "typeit-react";
 import style from "./apropos.module.scss";
@@ -11,11 +11,17 @@ import bannerStyle from "./banner.module.scss";
 import { useState } from "react";
 import { div } from "prelude-ls";
 import competenceStyle from "../styles/competence.module.scss";
+import serviceStyle from "../styles/service.module.scss";
 import aproposStyle from "./apropos.module.scss";
 import profilePic from "../public/images/dev.png";
 import { AiFillGithub, AiFillLayout, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-export default function Home() {
+import CardService from "./api/components/CardService";
+import { SiAmericanairlines } from "react-icons/si";
+import { DiCode, DiDatabase } from "react-icons/di";
+import styleCardService from "../styles/cardService.module.scss";
+
+export default function Home({ posts }) {
   const [isMenuVisible, setIsMenuVisible] = useState(true);
   const getSymbol = () => {
     return isMenuVisible ? (
@@ -43,7 +49,12 @@ export default function Home() {
         <li className={menuStyle.navigation__item}>
           <a href="#apropos">A propos</a>
         </li>
-        <li className={menuStyle.navigation__item}>Compétences</li>
+        <li className={menuStyle.navigation__item}>
+          <a href="#competences"> Compétences</a>
+        </li>
+        <li className={menuStyle.navigation__item}>
+          <a href="#services"> Services</a>
+        </li>
         <li className={menuStyle.navigation__item}>Réalisations</li>
       </ul>
     );
@@ -97,21 +108,26 @@ export default function Home() {
         </div>
 
         <div className={bannerStyle.banner__direction}>
-          <button>VOIR PLUS</button>
           <div className={bannerStyle.banner__direction__content}>
-            <FiChevronsDown
-              style={{
-                color: "#ffe73d",
-                fontSize: "30px",
-                animation: `${bannerStyle.MoveUpDown} 3s linear infinite`,
-                position: "absolute",
-                left: 0,
-                bottom: 0,
-                cursor: "pointer",
-                zIndex: 0,
-              }}
-            />
+            <a href="#apropos">
+              <FiChevronsDown
+                style={{
+                  color: "#ffe73d",
+                  fontSize: "30px",
+                  animation: `${bannerStyle.MoveUpDown} 3s linear infinite`,
+                  position: "absolute",
+                  left: 0,
+                  bottom: 0,
+                  cursor: "pointer",
+                  zIndex: 0,
+                  marginBottom: -40,
+                }}
+              />
+            </a>
           </div>
+          <a href="#apropos">
+            <button>VOIR PLUS</button>
+          </a>
         </div>
       </div>
 
@@ -120,6 +136,7 @@ export default function Home() {
 
         <div className={aproposStyle.descriptionContainer}>
           <h1>A propos de moi</h1>
+
           <p>
             Je suis détenteur d'un diplôme de licence en génie informatique et
             ingénieur logiciel. J'ai également fait plusieurs formations qui
@@ -142,48 +159,135 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={competenceStyle.competence}>
+      <div id="services" className={serviceStyle.service}>
+        <h2>Mes services</h2>
+        <div className={serviceStyle.service__container}>
+          <div className={styleCardService.cardService}>
+            <SiAmericanairlines
+              className={styleCardService.cardService__logo}
+            />
+            <h3>UI AND UX</h3>
+          </div>
+
+          <div className={styleCardService.cardService}>
+            <DiCode className={styleCardService.cardService__logo} />
+            <h3>FRONTEND</h3>
+          </div>
+          <div className={styleCardService.cardService}>
+            <DiDatabase className={styleCardService.cardService__logo} />
+            <h3>BACKEND</h3>
+          </div>
+        </div>
+        <div className={serviceStyle.service__separator}></div>
+      </div>
+
+      <div className={competenceStyle.competence} id="competences">
         <h2>Compétences</h2>
 
-        <ul className={competenceStyle.competence__container}>
+        <div className={competenceStyle.competence__underline}></div>
+
+        <div className={competenceStyle.competence__container}>
           <div className={competenceStyle.competence__container__item}>
-            <li>HTML</li>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>HTML5</h3>
+              <strong>95%</strong>
+            </div>
+            <div className={competenceStyle.niveau}>
+              <div className={competenceStyle.niveauHtml}></div>
+            </div>
+          </div>
+
+          <div className={competenceStyle.competence__container__item}>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>CSS3</h3>
+              <strong>95%</strong>
+            </div>
             <div className={competenceStyle.niveau}>
               <div className={competenceStyle.niveauHtml}></div>
             </div>
           </div>
           <div className={competenceStyle.competence__container__item}>
-            <li>CSS</li>
-            <div className={competenceStyle.niveau}>
-              <div className={competenceStyle.niveauCss}></div>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>JAVASCRIPT</h3>
+              <strong>70%</strong>
             </div>
-          </div>
-
-          <div className={competenceStyle.competence__container__item}>
-            <li>JAVASCRIPT</li>
             <div className={competenceStyle.niveau}>
               <div className={competenceStyle.niveauJs}></div>
             </div>
           </div>
           <div className={competenceStyle.competence__container__item}>
-            <li>JAVA</li>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>JAVA</h3>
+              <strong>65%</strong>
+            </div>
             <div className={competenceStyle.niveau}>
-              <div className={competenceStyle.niveauJava}></div>
+              <div className={competenceStyle.niveauJs}></div>
             </div>
           </div>
           <div className={competenceStyle.competence__container__item}>
-            <li>CSHARP</li>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>CSHARP</h3>
+              <strong>60%</strong>
+            </div>
             <div className={competenceStyle.niveau}>
               <div className={competenceStyle.niveauCsharp}></div>
             </div>
           </div>
           <div className={competenceStyle.competence__container__item}>
-            <li>BASE DE DONNEES</li>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>BASE DE DONNEES</h3>
+              <strong>70%</strong>
+            </div>
             <div className={competenceStyle.niveau}>
               <div className={competenceStyle.niveauDb}></div>
             </div>
           </div>
-        </ul>
+          <div className={competenceStyle.competence__container__item}>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>GIT ET GITHUB</h3>
+              <strong>70%</strong>
+            </div>
+            <div className={competenceStyle.niveau}>
+              <div className={competenceStyle.niveauDb}></div>
+            </div>
+          </div>
+          <div className={competenceStyle.competence__container__item}>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>FIGMA</h3>
+              <strong>70%</strong>
+            </div>
+            <div className={competenceStyle.niveau}>
+              <div className={competenceStyle.niveauDb}></div>
+            </div>
+          </div>
+          <div className={competenceStyle.competence__container__item}>
+            <div
+              className={competenceStyle.competence__container__item__header}
+            >
+              <h3>GESTION DE PROJET (SCRUM)</h3>
+              <strong>70%</strong>
+            </div>
+            <div className={competenceStyle.niveau}>
+              <div className={competenceStyle.niveauDb}></div>
+            </div>
+          </div>
+        </div>
         <div className={competenceStyle.competence__separator}></div>
       </div>
     </div>

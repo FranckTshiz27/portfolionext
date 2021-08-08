@@ -1,0 +1,39 @@
+.cardService {
+  background-color: rgba($color: #fff, $alpha: 1);
+  width: 320px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  transition: 1ms;
+  margin: 10px;
+  cursor: pointer;
+  h3 {
+    font-size: 1.6rem;
+    color: rgba($color: #ffe73d, $alpha: 1);
+    color: rgb(129, 125, 125);
+    font-weight: 900;
+  }
+
+  .cardService__logo {
+    font-size: 6rem;
+    color: rgb(129, 125, 125);
+  }
+
+  &:hover {
+    background-color: #ffe73d;
+    h3 {
+      font-size: 1rem;
+      color: rgb(129, 125, 125);
+      font-weight: 900;
+    }
+    margin: 10px;
+    cursor: pointer;
+
+    .cardService__logo {
+      font-size: 6rem;
+      color: rgb(129, 125, 125);
+    }
+  }
+}

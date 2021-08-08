@@ -4,12 +4,6 @@
     align-items: center;
     justify-content: center;
     padding: 55px 0px;
-    // background: linear-gradient(
-    //   0deg,
-    //   rgba(25, 25, 32, 1) 11%,
-    //   rgba(25, 25, 32, 0.7685324618128502) 45%,
-    //   rgba(25, 25, 32, 0.2531262993478641) 95%
-    // );
     font-family: "Josefin Sans", sans-serif;
     display: flex;
     flex-direction: column;
@@ -24,7 +18,7 @@
       text-align: center;
     }
     .p__last {
-      color: #fff;
+      color: rgb(216, 210, 210);
       font-size: 1.4rem;
       font-weight: 400;
       text-align: center;
@@ -83,14 +77,13 @@
     }
     .banner__direction {
       margin: 0;
-      height: 50px;
+      height: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       button {
         background-color: transparent;
-        margin-bottom: 100px;
         border: none;
         padding: 10px;
         border: 2px solid #ffe73d;
@@ -111,7 +104,7 @@
       }
       .banner__direction__content {
         width: 30px;
-        height: 60px;
+        height: 10px;
         position: relative;
         display: flex;
         justify-content: center;

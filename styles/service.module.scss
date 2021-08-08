@@ -1,0 +1,23 @@
+.service {
+  padding: 50px 0px;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: roboto;
+  h2 {
+    color: #ffe73d;
+    font-size: 2.5rem;
+  }
+  .service__container {
+    display: flex;
+    justify-content: center;
+  }
+  .service__separator {
+    height: 1px;
+    width: 60%;
+    background-color: rgba($color: #ffe73d, $alpha: 0.4);
+    margin-top: 100px;
+  }
+}
