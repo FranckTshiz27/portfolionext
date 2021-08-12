@@ -4,14 +4,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 0px;
+    padding: 100px 130px;
     margin: 0;
-    padding: 100px 200px;
+    box-sizing: border-box;
 
     .imageContainer {
-      background-color: #9d9d9d;
-      height: 400px;
       width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+
+      img {
+        margin-top: 5px;
+        z-index: 0;
+      }
     }
     .descriptionContainer {
       width: 50%;
@@ -22,10 +29,30 @@
         font-size: 2rem;
       }
       p {
-        color: #5a5a5a;
+        color: #4d4b4b;
         line-height: 30px;
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 700;
+      }
+    }
+    .apropos__underline {
+      height: 3px;
+      width: 250px;
+      background-color: #272727;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      &:after {
+        content: "";
+        height: 8px;
+        width: 25px;
+        background-color: #ffe73d;
+        position: absolute;
+        border-radius: 10px;
+        transform: translateY(-1px);
       }
     }
   }
