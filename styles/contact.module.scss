@@ -1,15 +1,14 @@
 .contact__coordonnee {
-  width: 100%;
   p {
     font-weight: 700;
     font-size: 12px;
   }
-  width: 50%;
   display: flex;
   justify-content: center;
+  width: 100%;
   .contact__coordonnee__content {
-    border-top: 4px solid #ffe73d;
-    width: 80%;
+    border-top: 2px solid #ffe73d;
+    width: 100%;
     background-color: #191919;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@
     padding: 20px;
     .contact__coordonnee__content__links {
       display: flex;
-      width: 30%;
+      width: 15%;
       justify-content: space-around;
       align-items: center;
     }

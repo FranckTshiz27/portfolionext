@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import * as React from "react";
 import Image from "next/image";
@@ -32,6 +33,7 @@ import styleRealisation from "../styles/realisation.module.scss";
 import Card from "./Card";
 import styleContact from "../styles/contact.module.scss";
 import myImage from "../public/images/porfolio31.png";
+// eslint-disable-next-line @next/next/no-document-import-in-page
 
 export default function Home({ posts }) {
   const [isMenuVisible, setIsMenuVisible] = useState(true);
@@ -86,18 +88,6 @@ export default function Home({ posts }) {
         </a>
         <a
           className={
-            isSelected == "competence"
-              ? menuStyle.navigation__item__active
-              : menuStyle.navigation__item
-          }
-          href="#competences"
-          id="competence"
-          onClick={handleClicItem}
-        >
-          Compétences
-        </a>
-        <a
-          className={
             isSelected == "service"
               ? menuStyle.navigation__item__active
               : menuStyle.navigation__item
@@ -108,6 +98,19 @@ export default function Home({ posts }) {
         >
           Services
         </a>
+        <a
+          className={
+            isSelected == "competence"
+              ? menuStyle.navigation__item__active
+              : menuStyle.navigation__item
+          }
+          href="#competences"
+          id="competence"
+          onClick={handleClicItem}
+        >
+          Compétences
+        </a>
+
         <a
           className={
             isSelected == "realisation"
@@ -126,10 +129,10 @@ export default function Home({ posts }) {
   return (
     <html>
       <head>
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,100&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </head>
       <body>
         <div className={menuStyle.menu__container}>
@@ -347,10 +350,10 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>PHP</h3>
-                <strong>70%</strong>
+                <strong>60%</strong>
               </div>
               <div className={competenceStyle.niveau}>
-                <div className={competenceStyle.niveauJs}></div>
+                <div className={competenceStyle.niveauPhp}></div>
               </div>
             </div>
             <div className={competenceStyle.competence__container__item}>
