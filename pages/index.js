@@ -216,7 +216,7 @@ export default function Home({ posts }) {
         <div id="services" className={serviceStyle.service}>
           <h2>
             <FaQuoteLeft className={serviceStyle.service__quote} />
-            Développeur informatiqie indépendant
+            Développeur informatique indépendant
             <FaQuoteRight className={serviceStyle.service__quote} />
           </h2>
           <div className={serviceStyle.service__container}>
