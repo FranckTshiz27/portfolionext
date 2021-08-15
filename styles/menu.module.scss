@@ -23,6 +23,7 @@
     z-index: 30px;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
+    margin-right: 50px;
     .navigation {
       list-style: none;
       display: flex;
@@ -30,7 +31,6 @@
       z-index: 13;
       justify-content: center;
       align-items: center;
-      width: 100%;
 
       .navigation__item {
         text-decoration: none;

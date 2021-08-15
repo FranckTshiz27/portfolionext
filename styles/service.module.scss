@@ -1,4 +1,4 @@
-@media screen and (max-width: 1268px) {
+@media screen and (min-width: 1268px) {
   .service {
     padding: 100px 130px;
     opacity: 1;
@@ -70,25 +70,28 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    padding: 20px 0px;
     .service__quote {
-      margin: 1em;
+      margin: 0.5em;
       font-size: 0.9em;
     }
     h2 {
       color: #fff;
-      font-size: 1.2em;
+      font-size: 1em;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 5px;
+      width: 100%;
     }
 
     .service__container {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      width: 250px;
+      align-items: center;
+      justify-content: center;
     }
     .service__separator {
       height: 1px;
@@ -99,7 +102,7 @@
         rgba(#ffe73d, 0.4),
         #ffe73d
       );
-      transform: translateY(100px);
+      transform: translateY(20px);
     }
 
     .service__underline {

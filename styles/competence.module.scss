@@ -144,101 +144,132 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    box-sizing: border-box;
+    padding: 30px 10px;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
-    background-color: cyan;
-
+    box-sizing: border-box;
     h2 {
       color: #fff;
-      font-weight: 500;
-      font-size: 2em;
+      font-size: 1.2em;
       line-height: 0.5;
       text-align: start;
       display: flex;
       justify-content: center;
       width: 100%;
-      font-weight: 700;
-      margin-bottom: 5px;
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .competence__separator {
+      height: 1px;
+      width: 60%;
+      background: linear-gradient(
+        0.25turn,
+        rgba(#ffe73d, 0.2),
+        rgba(#ffe73d, 0.4),
+        #ffe73d
+      );
+      transform: translateY(100px);
+    }
+    .competence__underline {
+      height: 3px;
+      width: 200px;
+      background-color: #fff;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-1px);
+      &:after {
+        content: "";
+        height: 6px;
+        width: 25px;
+        background-color: #ffe73d;
+        position: absolute;
+        border-radius: 10px;
+      }
+
+      margin-bottom: 20px;
     }
 
     .competence__container {
       line-height: 1.5em;
       padding: 0;
-      width: 100%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative;
-      margin-left: -100px;
-      &:after {
-        content: "";
-        position: absolute;
-        height: 180px;
-        width: 10px;
-        background-color: #acacac;
-        transform: translate(200px, 20px);
-      }
+      flex-wrap: wrap;
+      box-sizing: border-box;
       .competence__container__item {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        margin-left: 150px;
+        flex-direction: column;
+        width: 15rem;
         margin-bottom: 10px;
-        li {
-          list-style: none;
+        box-sizing: border-box;
+        .competence__container__item__header {
           position: relative;
-          padding: 0 0 0 20px;
-          color: #ffe73d;
-          font-size: 11px;
-          font-weight: 400;
-          width: 40%;
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 5px;
-            width: 10px;
-            height: 10px;
-            background-color: #ffe73d;
-            border-radius: 100%;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 200;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: -6px;
+          strong {
+            color: #ffe73d;
+            font-weight: lighter;
+            font-size: 1rem;
+          }
+          h3 {
+            font-weight: lighter;
+            font-size: 1rem;
           }
         }
         .niveau {
-          width: 500px;
+          width: 100%;
           display: flex;
           justify-content: flex-start;
+          border-radius: 50px;
+          background-color: #fff;
+          height: 5px;
           .niveauHtml {
-            width: 200px;
-            height: 7px;
+            width: 85%;
+            height: 5px;
             background-color: #ffe73d;
+            border-radius: 50px 0px 0px 50px;
           }
           .niveauCss {
-            width: 100px;
-            height: 10px;
+            width: 85%;
+            height: 5px;
             background-color: #ffe73d;
           }
           .niveauJs {
-            width: 160px;
-            height: 10px;
+            width: 70%;
             background-color: #ffe73d;
+            height: 5px;
           }
           .niveauJava {
-            width: 120px;
+            width: 65%;
             height: 10px;
             background-color: #ffe73d;
           }
           .niveauCsharp {
-            width: 50px;
-            height: 10px;
+            width: 60%;
+            height: 5px;
             background-color: #ffe73d;
           }
           .niveauDb {
-            width: 80px;
-            height: 10px;
+            width: 70%;
+            height: 5px;
+            background-color: #ffe73d;
+          }
+          .niveauPhp {
+            width: 60%;
+            height: 5px;
             background-color: #ffe73d;
           }
         }

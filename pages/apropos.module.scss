@@ -66,6 +66,7 @@
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
+    padding: 20px 30px;
     .imageContainer {
       width: 40%;
       display: flex;
@@ -79,9 +80,12 @@
       }
     }
     .descriptionContainer {
-      width: 100%;
-      margin-left: 70px;
       height: 400px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3em;
       h1 {
         font-weight: 900;
         font-size: 1.3rem;
@@ -91,6 +95,8 @@
         line-height: 30px;
         font-size: 0.6rem;
         font-weight: 700;
+        padding: 0 1em;
+        width: 80%;
       }
     }
     .apropos__underline {

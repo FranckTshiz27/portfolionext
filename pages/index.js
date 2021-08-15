@@ -206,13 +206,13 @@ export default function Home({ posts }) {
             </p>
             <div className="contact__coordonnee__content__links">
               <AiFillGithub
-                style={{ color: "#5a5a5a", fontSize: 35, margin: 20 }}
+                style={{ color: "#5a5a5a", fontSize: 25, margin: 10 }}
               />
               <FaLinkedinIn
-                style={{ color: "#5a5a5a", fontSize: 35, margin: 20 }}
+                style={{ color: "#5a5a5a", fontSize: 25, margin: 10 }}
               />
               <AiOutlineTwitter
-                style={{ color: "#5a5a5a", fontSize: 35, margin: 20 }}
+                style={{ color: "#5a5a5a", fontSize: 25, margin: 10 }}
               />
             </div>
           </div>
