@@ -70,6 +70,10 @@
     display: flex;
     padding: 10px;
     justify-content: center;
+    background-color: #272727;
+    width: 100%;
+    justify-content: flex-start;
+    z-index: auto;
     .menu__btn {
       display: flex;
       font-size: 20px;
@@ -86,9 +90,9 @@
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 0;
     padding: 0;
     background-color: transparent;
+    position: fixed;
   }
   .menu {
     background-color: #272727;
