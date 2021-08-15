@@ -32,7 +32,7 @@ import myImage from "../public/images/porfolio31.png";
 // eslint-disable-next-line @next/next/no-document-import-in-page
 
 export default function Home({ posts }) {
-  const [isMenuVisible, setIsMenuVisible] = useState(true);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isSelected, setIsSelected] = useState("accueil");
   const getSymbol = () => {
     return isMenuVisible ? (
