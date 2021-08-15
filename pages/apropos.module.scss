@@ -54,6 +54,11 @@
         transform: translateY(-1px);
       }
     }
+    .icons {
+      color: "#5a5a5a";
+      font-size: 2em;
+      margin: 10px;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -98,6 +103,11 @@
         padding: 0 1em;
         width: 80%;
       }
+    }
+    .icons {
+      color: "#5a5a5a";
+      font-size: 1em;
+      margin: 10px;
     }
     .apropos__underline {
       height: 3px;

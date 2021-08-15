@@ -73,12 +73,13 @@
     background-color: #272727;
     width: 100%;
     justify-content: flex-start;
-    z-index: auto;
+    z-index: 20;
     .menu__btn {
       display: flex;
       font-size: 20px;
       background-color: #fff;
       margin: 0px 20px;
+      z-index: 20;
     }
   }
   .menu__container {
@@ -93,6 +94,7 @@
     padding: 0;
     background-color: transparent;
     position: fixed;
+    z-index: 20;
   }
   .menu {
     background-color: #272727;

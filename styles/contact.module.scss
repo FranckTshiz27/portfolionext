@@ -1,60 +1,63 @@
-.contact__coordonnee {
-  box-sizing: border-box;
-  p {
-    font-weight: 700;
-    font-size: 12px;
-  }
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  .contact__coordonnee__content {
-    border-top: 2px solid #ffe73d;
-    width: 100%;
-    background-color: #191919;
+@media (min-width: 1268px) {
+  .contact__coordonnee {
+    box-sizing: border-box;
+    p {
+      font-weight: 700;
+      font-size: 12px;
+    }
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    padding: 20px;
-    .contact__coordonnee__content__links {
+    justify-content: center;
+    width: 100%;
+    .contact__coordonnee__content {
+      border-top: 2px solid #ffe73d;
+      width: 100%;
+      background-color: #191919;
       display: flex;
-      width: 15%;
-      justify-content: space-around;
+      flex-direction: column;
       align-items: center;
+      color: #fff;
+      padding: 20px;
+      .contact__coordonnee__content__links {
+        display: flex;
+        width: 8%;
+        justify-content: space-around;
+        align-items: center;
+        .icons {
+          color: #ffe73d;
+          font-size: 1.3em;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 768px) {
-  .contact {
-    padding: 10px;
-    background-color: #272727;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .contact__coordonnee {
+    box-sizing: border-box;
     p {
       font-weight: 700;
       font-size: 12px;
     }
-
-    .contact__coordonnee {
-      width: 90%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .contact__coordonnee__content {
+      border-top: 2px solid #ffe73d;
+      width: 100%;
+      background-color: #191919;
       display: flex;
-      justify-content: center;
-      .contact__coordonnee__content {
-        border-top: 4px solid #ffe73d;
-        width: 80%;
-        background-color: #191919;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      padding: 20px;
+      .contact__coordonnee__content__links {
         display: flex;
-        flex-direction: column;
+        width: 40%;
+        justify-content: space-around;
         align-items: center;
-        color: #fff;
-        padding: 20px;
-        .contact__coordonnee__content__links {
-          display: flex;
-          width: 70%;
-          justify-content: space-around;
-          align-items: center;
+        .icons {
+          color: #ffe73d;
+          font-size: 1em;
         }
       }
     }

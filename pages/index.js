@@ -47,6 +47,7 @@ export default function Home({ posts }) {
 
   const handleClicItem = (e) => {
     setIsSelected(e.target.id);
+    setIsMenuVisible(!isMenuVisible);
   };
 
   const handleClickMenu = (e) => {
@@ -205,15 +206,9 @@ export default function Home({ posts }) {
               développement web et mobile.
             </p>
             <div className="contact__coordonnee__content__links">
-              <AiFillGithub
-                style={{ color: "#5a5a5a", fontSize: 25, margin: 10 }}
-              />
-              <FaLinkedinIn
-                style={{ color: "#5a5a5a", fontSize: 25, margin: 10 }}
-              />
-              <AiOutlineTwitter
-                style={{ color: "#5a5a5a", fontSize: 25, margin: 10 }}
-              />
+              <AiFillGithub className={aproposStyle.icons} />
+              <FaLinkedinIn className={aproposStyle.icons} />
+              <AiOutlineTwitter className={aproposStyle.icons} />
             </div>
           </div>
         </div>
@@ -460,10 +455,10 @@ export default function Home({ posts }) {
             <p>Téléphone: +243824360292</p>
             <p>Email: francktshizbu27@gmail.com</p>
             <div className={styleContact.contact__coordonnee__content__links}>
-              <AiFillGithub style={{ color: "#ffe73d", fontSize: 20 }} />
-              <FaFacebookF style={{ color: "#ffe73d", fontSize: 20 }} />
-              <FaLinkedinIn style={{ color: "#ffe73d", fontSize: 20 }} />
-              <AiOutlineTwitter style={{ color: "#ffe73d", fontSize: 20 }} />
+              <AiFillGithub className={styleContact.icons} />
+              <FaFacebookF className={styleContact.icons} />
+              <FaLinkedinIn className={styleContact.icons} />
+              <AiOutlineTwitter className={styleContact.icons} />
             </div>
           </div>
         </div>
