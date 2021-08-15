@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1268px) {
   .banner {
     background-color: #272727;
     align-items: center;
@@ -127,62 +127,74 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .banner {
+    background-color: #272727;
+    align-items: center;
+    justify-content: center;
     font-family: "Josefin Sans", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
     background-attachment: fixed;
-    padding-top: 10px;
-    height: 400px;
+    padding: 30px;
     box-sizing: border-box;
+    // padding: 140px 130px 100px 130px;
+
+    p {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: start;
+      width: 100%;
+    }
+    .p__last {
+      color: rgb(216, 210, 210);
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: start;
+      width: 100%;
+      strong {
+        color: #ffe73d;
+        font-weight: 400;
+      }
+    }
     .banner__content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0;
-      height: 200px;
-      .banner__symbol {
-        background-color: #fff;
-        height: 50px;
-        width: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0% 10% 10% 0%;
-        margin-left: 0;
-      }
+      margin-bottom: 1.2em;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 100%;
       .banner__title {
-        width: 40%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        box-sizing: border-box;
-        overflow: hidden;
-        margin-left: 10px;
+        margin: 10px;
         .banner__title__parts__first {
           color: #fff;
-          font-size: 1.2rem;
-          font-weight: 900;
+          font-size: 1.2em;
+          font-weight: 700;
           text-align: start;
           margin: 0;
-          margin-bottom: 5px;
         }
         .banner__title__parts__second {
           color: #fff;
-          font-size: 1rem;
+          font-size: 1.1rem;
           font-weight: 700;
           text-align: start;
-          margin-bottom: 5px;
+          margin: 5px;
         }
 
         .banner__title__name {
           color: #ffe73d;
           font-weight: 500;
-          font-size: 1em;
+          font-size: 2em;
           line-height: 0.5;
           text-align: start;
         }
@@ -190,43 +202,45 @@
     }
     .banner__direction {
       margin: 0;
-      height: 160px;
+      height: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      box-sizing: border-box;
-      overflow: hidden;
       button {
         background-color: transparent;
-        margin-bottom: 70px;
         border: none;
-        margin-left: 20px;
         padding: 10px;
         border: 2px solid #ffe73d;
+        text-align: center;
         color: #ffe73d;
         font-family: "Josefin Sans", sans-serif;
-        font-weight: 900;
-        font-size: 0.7rem;
+        font-weight: 700;
+        font-size: 1rem;
         cursor: pointer;
         &:hover {
           background-color: #ffe73d;
           transition: 1s;
           color: rgba(#000, 0.9);
           font-family: "Josefin Sans", sans-serif;
-          font-weight: 900;
-          font-size: 1.1rem;
+          font-weight: 700;
+          font-size: 1rem;
         }
       }
       .banner__direction__content {
         width: 30px;
-        height: 60px;
+        height: 10px;
         position: relative;
         display: flex;
         justify-content: center;
       }
     }
-    border-bottom: 0.5px solid rgba(#ffe73d, 0.2);
+    // border-bottom: 0.5px solid rgba(#ffe73d, 0.2);
+  }
+
+  .banner__img {
+    width: 5em;
+    height: auto;
   }
 }
 

@@ -1,21 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
 import * as React from "react";
 import Image from "next/image";
-import { DiAptana, DiBackbone } from "react-icons/di";
 import { FiChevronsDown } from "react-icons/fi";
 import TypeIt from "typeit-react";
-import style from "./apropos.module.scss";
 import menuStyle from "../styles/menu.module.scss";
 import { FiAlignJustify, FiX } from "react-icons/fi";
 import bannerStyle from "./banner.module.scss";
 import { useState } from "react";
-import { div } from "prelude-ls";
 import competenceStyle from "../styles/competence.module.scss";
 import serviceStyle from "../styles/service.module.scss";
 import aproposStyle from "./apropos.module.scss";
 import profilePic from "../public/images/bannerimg.png";
-import { AiFillGithub, AiFillLayout, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -129,10 +125,7 @@ export default function Home({ posts }) {
   return (
     <html>
       <head>
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,100&display=swap"
-          rel="stylesheet"
-        /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
         <div className={menuStyle.menu__container}>
