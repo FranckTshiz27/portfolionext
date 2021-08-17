@@ -21,7 +21,6 @@ import {
   FaBug,
   FaPaperPlane,
 } from "react-icons/fa";
-import CardService from "./api/components/CardService";
 import { SiAmericanairlines } from "react-icons/si";
 import { DiCode, DiDatabase } from "react-icons/di";
 import styleCardService from "../styles/cardService.module.scss";
@@ -32,7 +31,7 @@ import myImage from "../public/images/porfolio31.png";
 // eslint-disable-next-line @next/next/no-document-import-in-page
 
 export default function Home({ posts }) {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(true);
   const [isSelected, setIsSelected] = useState("accueil");
   const getSymbol = () => {
     return isMenuVisible ? (
@@ -47,7 +46,7 @@ export default function Home({ posts }) {
 
   const handleClicItem = (e) => {
     setIsSelected(e.target.id);
-    setIsMenuVisible(!isMenuVisible);
+    // setIsMenuVisible(!isMenuVisible);
   };
 
   const handleClickMenu = (e) => {
