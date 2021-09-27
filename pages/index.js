@@ -444,6 +444,7 @@ export default function Home({ posts }) {
               description={
                 "Une application de gestion prenant en charge plusieurs processus des écoles, notamment l'inscription, la paie et le controle"
               }
+              link="https://drive.google.com/drive/folders/1Oucofy44plg8ugVYSIAyytd00CNCFbNd"
             />
           </div>
         </div>

@@ -7,11 +7,11 @@ import imageProject1 from "../public/images/Capturecms.PNG";
 
 
 
-const Card = ({title,description,img,imgClassName})=>{
-
+const Card = ({title,description,img,imgClassName,link})=>{
   const showProjectImage=()=>{
     switch (imgClassName) {
       case "card__image__porfolio":
+       
         return  <div className={`${styleCard.card__image} ${styleCard.card__image__porfolio}`}></div>
       break;
 
@@ -20,6 +20,7 @@ const Card = ({title,description,img,imgClassName})=>{
       break;
      
       case "card__image__skull":
+        
         return  <div className={`${styleCard.card__image} ${styleCard.card__image__skull}`}></div>
       break;
     
@@ -39,7 +40,9 @@ const Card = ({title,description,img,imgClassName})=>{
           <div className={styleCard.card__title}>{title}</div>
           <p className={styleCard.card__text}>{description}</p>
           <button className={`${styleCard.btn} ${styleCard.btn__block} ${styleCard.card__btn}`}>
-              <DiGitMerge style={{color:"#ffe73d" , fontSize:"25px", fontWeight:700, cursor:"pointer"}}/>
+              
+             
+              <a href={link}> <DiGitMerge style={{color:"#ffe73d" , fontSize:"25px", fontWeight:700, cursor:"pointer"}}/></a>
               <FiLink style={{color:"#ffe73d" , fontSize:"25px", fontWeight:700, cursor:"pointer"}}/>
           </button>
         </div>
