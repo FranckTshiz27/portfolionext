@@ -463,7 +463,10 @@ export default function Home({ posts }) {
                 <FaFacebookF className={styleContact.icons} />
               </a>
 
-              <FaLinkedinIn className={styleContact.icons} />
+              <a href="https://www.linkedin.com/feed/">
+                <FaLinkedinIn className={styleContact.icons} />
+              </a>
+
               <AiOutlineTwitter className={styleContact.icons} />
             </div>
           </div>
