@@ -466,8 +466,10 @@ export default function Home({ posts }) {
               <a href="https://www.linkedin.com/feed/">
                 <FaLinkedinIn className={styleContact.icons} />
               </a>
-
-              <AiOutlineTwitter className={styleContact.icons} />
+              <a href="https://twitter.com/TshizubuFranoi2">
+                {" "}
+                <AiOutlineTwitter className={styleContact.icons} />
+              </a>
             </div>
           </div>
         </div>
