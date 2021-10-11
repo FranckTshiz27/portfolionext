@@ -456,8 +456,13 @@ export default function Home({ posts }) {
             <p>Téléphone: +243824360292</p>
             <p>Email: francktshizbu27@gmail.com</p>
             <div className={styleContact.contact__coordonnee__content__links}>
-              <AiFillGithub className={styleContact.icons} />
-              <FaFacebookF className={styleContact.icons} />
+              <a>
+                <AiFillGithub className={styleContact.icons} />
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=100005899638524">
+                <FaFacebookF className={styleContact.icons} />
+              </a>
+
               <FaLinkedinIn className={styleContact.icons} />
               <AiOutlineTwitter className={styleContact.icons} />
             </div>
