@@ -303,7 +303,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>HTML5</h3>
-                <strong>95%</strong>
+                <strong>70%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauHtml}></div>
@@ -315,7 +315,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>CSS3</h3>
-                <strong>95%</strong>
+                <strong>70%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauHtml}></div>
@@ -326,7 +326,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>JAVASCRIPT</h3>
-                <strong>70%</strong>
+                <strong>65%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauJs}></div>
@@ -337,7 +337,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>PHP</h3>
-                <strong>60%</strong>
+                <strong>50%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauPhp}></div>
@@ -348,7 +348,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>JAVA</h3>
-                <strong>65%</strong>
+                <strong>60%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauJs}></div>
@@ -370,7 +370,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>BASE DE DONNEES</h3>
-                <strong>70%</strong>
+                <strong>60%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauDb}></div>
@@ -381,7 +381,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>GIT ET GITHUB</h3>
-                <strong>70%</strong>
+                <strong>60%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauDb}></div>
@@ -392,7 +392,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>FIGMA</h3>
-                <strong>70%</strong>
+                <strong>50%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauDb}></div>
@@ -403,7 +403,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>GESTION DE PROJET (SCRUM)</h3>
-                <strong>70%</strong>
+                <strong>60%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauDb}></div>
