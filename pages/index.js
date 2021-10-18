@@ -395,7 +395,7 @@ export default function Home({ posts }) {
                 <strong>50%</strong>
               </div>
               <div className={competenceStyle.niveau}>
-                <div className={competenceStyle.niveauDb}></div>
+                <div className={competenceStyle.niveauPhp}></div>
               </div>
             </div>
             <div className={competenceStyle.competence__container__item}>
