@@ -1,6 +1,7 @@
+@import "../styles/variable.scss";
 @media screen and (min-width: 1268px) {
   .banner {
-    background-color: #272727;
+    background-color: $primaryColor;
     align-items: center;
     justify-content: center;
     font-family: "Josefin Sans", sans-serif;
@@ -24,7 +25,7 @@
       text-align: start;
       width: 100%;
       strong {
-        color: #ffe73d;
+        color: $secondaryColor;
         font-weight: 400;
       }
     }
@@ -56,9 +57,9 @@
         }
 
         .banner__title__name {
-          color: #ffe73d;
-          font-weight: 500;
-          font-size: 2em;
+          color: $secondaryColor;
+          font-weight: 900;
+          font-size: 3em;
           line-height: 0.5;
           text-align: start;
         }
@@ -75,15 +76,15 @@
         background-color: transparent;
         border: none;
         padding: 10px;
-        border: 2px solid #ffe73d;
+        border: 2px solid $secondaryColor;
         text-align: center;
-        color: #ffe73d;
+        color: $secondaryColor;
         font-family: "Josefin Sans", sans-serif;
         font-weight: 700;
         font-size: 1rem;
         cursor: pointer;
         &:hover {
-          background-color: #ffe73d;
+          background-color: $secondaryColor;
           transition: 1s;
           color: rgba(#000, 0.9);
           font-family: "Josefin Sans", sans-serif;
@@ -138,8 +139,6 @@
     align-items: center;
     padding: 30px;
     box-sizing: border-box;
-    // padding: 140px 130px 100px 130px;
-
     p {
       color: #fff;
       font-size: 1rem;
@@ -155,7 +154,7 @@
       text-align: center;
       width: 100%;
       strong {
-        color: #ffe73d;
+        color: $secondaryColor;
         font-weight: 400;
       }
     }
@@ -192,7 +191,7 @@
         }
 
         .banner__title__name {
-          color: #ffe73d;
+          color: $secondaryColor;
           font-weight: 500;
           font-size: 2em;
           line-height: 0.5;
@@ -211,15 +210,15 @@
         background-color: transparent;
         border: none;
         padding: 10px;
-        border: 2px solid #ffe73d;
+        border: 2px solid $secondaryColor;
         text-align: center;
-        color: #ffe73d;
+        color: $secondaryColor;
         font-family: "Josefin Sans", sans-serif;
         font-weight: 700;
         font-size: 1rem;
         cursor: pointer;
         &:hover {
-          background-color: #ffe73d;
+          background-color:$secondaryColor;
           transition: 1s;
           color: rgba(#000, 0.9);
           font-family: "Josefin Sans", sans-serif;

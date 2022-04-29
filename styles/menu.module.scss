@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 @media screen and (min-width: 1268px) {
   .menu__main {
     display: none;
@@ -5,17 +7,20 @@
       display: none;
       background-color: #fff;
     }
+
+   
   }
   .menu__container {
     position: fixed;
     width: 100%;
     display: flex;
-    background-color: #272727;
+    background-color: $primaryColor;
     z-index: 20;
     align-items: center;
+    border-bottom: solid rgba($secondaryColor,0.2) 2px;
   }
   .menu {
-    background-color: #272727;
+    background-color: $primaryColor;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -27,7 +32,7 @@
     .navigation {
       list-style: none;
       display: flex;
-      background-color: #272727;
+      background-color: $primaryColor;
       z-index: 13;
       justify-content: center;
       align-items: center;
@@ -44,14 +49,17 @@
         align-items: center;
         margin: 30px 10px;
         font-weight: 700;
+
+       
         &:hover {
-          color: #ffe73d;
+          color: $secondaryColor;
           transition: 1s;
         }
+      
       }
       .navigation__item__active {
         text-decoration: none;
-        color: #ffe73d;
+        color: $secondaryColor;
         font-size: 13px;
         font-family: "Josefin Sans";
         text-transform: uppercase;
@@ -61,6 +69,18 @@
         align-items: center;
         margin: 30px 10px;
         font-weight: 700;
+        // &:after {
+        //   content: '';
+        //   position: absolute;
+        //   width: 100%;
+        //   transform: scaleX(2);
+        //   height: 1px;
+        //   bottom: 0;
+        //   left: 0;
+        //   background-color: $secondaryColor;
+        //   transform-origin: bottom right;
+        //   transition: transform 0.25s ease-out;
+        // }
       }
     }
   }
@@ -128,22 +148,18 @@
         margin: 10px 10px;
         font-weight: 700;
         &:hover {
-          color: #ffe73d;
+          color: $secondaryColor;
           transition: 1s;
         }
       }
       .navigation__item__active {
         text-decoration: none;
-        color: #ffe73d;
+        color: $secondaryColor;
         font-size: 13px;
         font-family: "Josefin Sans";
         text-transform: uppercase;
         transition: 1s;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        margin: 10px 10px;
-        font-weight: 700;
       }
     }
   }

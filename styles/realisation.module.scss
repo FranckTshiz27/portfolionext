@@ -1,3 +1,5 @@
+
+@import "variable.scss";
 @media screen and (min-width: 1268px) {
   .realisation {
     display: flex;
@@ -6,10 +8,10 @@
     align-items: center;
     padding: 100px 130px;
     box-sizing: border-box;
-    background-color: rgb(241, 237, 237);
+    background-color: $thirdColor;
 
     h2 {
-      color: #272727;
+      color: #fff;
       font-weight: 500;
       font-size: 2.3em;
       line-height: 0.5;
@@ -32,7 +34,7 @@
     .realisation__underline {
       height: 3px;
       width: 200px;
-      background-color: #fff;
+      background-color: $secondaryColor;
       position: relative;
       display: flex;
       justify-content: center;
@@ -43,7 +45,7 @@
         content: "";
         height: 6px;
         width: 25px;
-        background-color: #ffe73d;
+        background-color: $secondaryColor;
         position: absolute;
         border-radius: 10px;
       }

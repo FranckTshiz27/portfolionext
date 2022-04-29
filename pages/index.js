@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from "react";
 import Image from "next/image";
+import ImageProfile from "../public/images/profilepic.png";
 import { FiChevronsDown } from "react-icons/fi";
 import TypeIt from "typeit-react";
 import menuStyle from "../styles/menu.module.scss";
@@ -19,17 +20,16 @@ import {
   FaQuoteLeft,
   FaQuoteRight,
   FaBug,
-  FaPaperPlane,
+ FaPaperPlane,
 } from "react-icons/fa";
+
+import {CgMail} from "react-icons/cg";
 import { SiAmericanairlines } from "react-icons/si";
 import { DiCode, DiDatabase } from "react-icons/di";
 import styleCardService from "../styles/cardService.module.scss";
 import styleRealisation from "../styles/realisation.module.scss";
 import Card from "./Card";
 import styleContact from "../styles/contact.module.scss";
-import myImage from "../public/images/porfolio31.png";
-// eslint-disable-next-line @next/next/no-document-import-in-page
-
 export default function Home({ posts }) {
   const [isMenuVisible, setIsMenuVisible] = useState(true);
   const [isSelected, setIsSelected] = useState("accueil");
@@ -46,7 +46,6 @@ export default function Home({ posts }) {
 
   const handleClicItem = (e) => {
     setIsSelected(e.target.id);
-    // setIsMenuVisible(!isMenuVisible);
   };
 
   const handleClickMenu = (e) => {
@@ -145,8 +144,7 @@ export default function Home({ posts }) {
                 <TypeIt>François&nbsp;Tshizubu</TypeIt>
               </h1>
               <p>
-                Développeur web et mobile, Développeur Fullstack, UX et UI
-                designer
+                Développement d'applications web, mobile et desktop
               </p>
               <p className={bannerStyle.p__last}>
                 Contactez-nous pour obtenir des solutions
@@ -154,13 +152,16 @@ export default function Home({ posts }) {
               </p>
             </div>
             <div>
+             
               <Image
                 src={profilePic}
-                alt="François Tshizubu"
+                alt="illustartion"
                 className={bannerStyle.banner_img}
                 width="600"
                 height="600"
               />
+            
+            
             </div>
           </div>
 
@@ -169,7 +170,7 @@ export default function Home({ posts }) {
               <a href="#apropos">
                 <FiChevronsDown
                   style={{
-                    color: "#ffe73d",
+                    color: "#ffc576",
                     fontSize: "30px",
                     animation: `${bannerStyle.MoveUpDown} 3s linear infinite`,
                     position: "absolute",
@@ -190,7 +191,7 @@ export default function Home({ posts }) {
 
         <div className={aproposStyle.apropos} id="apropos">
           <div className={aproposStyle.imageContainer}>
-            <Image src={myImage} alt="françois tshizubu" />
+            <Image src={ImageProfile} alt="françois tshizubu" />
           </div>
 
           <div className={aproposStyle.descriptionContainer}>
@@ -205,13 +206,28 @@ export default function Home({ posts }) {
               développement web et mobile.
             </p>
             <div className="contact__coordonnee__content__links">
+              <a href="https://github.com/FranckTshiz27">
               <AiFillGithub className={aproposStyle.icons} />
+              </a>
+              
+              <a href="https://www.linkedin.com/feed/">
               <FaLinkedinIn className={aproposStyle.icons} />
+              </a>
+              
+              <a href="https://twitter.com/TshizubuFranoi2">
               <AiOutlineTwitter className={aproposStyle.icons} />
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=100005899638524">
+                <FaFacebookF className={aproposStyle.icons}/>
+              </a>
+
+              <a href="mailto:francktshizbu27@gmail.com">
+                <CgMail className={aproposStyle.icons}/>
+              </a>
+              
             </div>
           </div>
         </div>
-
         <div id="services" className={serviceStyle.service}>
           <h2>
             <FaQuoteLeft className={serviceStyle.service__quote} />
@@ -293,7 +309,7 @@ export default function Home({ posts }) {
         </div>
 
         <div className={competenceStyle.competence} id="competences">
-          <h2>MES COMPETENCES</h2>
+          <h2>Mes compétences</h2>
 
           <div className={competenceStyle.competence__underline}></div>
 
@@ -413,7 +429,7 @@ export default function Home({ posts }) {
         </div>
 
         <div className={styleRealisation.realisation} id="realisations">
-          <h2>MES REALISATIONS</h2>
+          <h2>Mes Réalisations</h2>
           <div className={styleRealisation.realisation__underline}></div>
           <div className={styleRealisation.realisation__content}>
             <Card
@@ -467,10 +483,13 @@ export default function Home({ posts }) {
                 <FaLinkedinIn className={styleContact.icons} />
               </a>
               <a href="https://twitter.com/TshizubuFranoi2">
-                {" "}
                 <AiOutlineTwitter className={styleContact.icons} />
               </a>
+              <a href="mailto:francktshizbu27@gmail.com">
+                <CgMail className={styleContact.icons}/>
+              </a>
             </div>
+          
           </div>
         </div>
       </body>

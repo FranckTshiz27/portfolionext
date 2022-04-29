@@ -1,35 +1,36 @@
+@import "../styles/variable.scss";
+
 @media screen and (min-width: 1268px) {
   .apropos {
-    background-color: #f8f9fa;
+    background-color: $thirdColor;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 100px 130px;
     margin: 0;
     box-sizing: border-box;
-
+    color: #fff;
     .imageContainer {
-      width: 50%;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      position: relative;
-
+      align-items: center;
+      width: 25%;
       img {
-        margin-top: 5px;
+        width: 12rem;
+        object-fit: cover;
         z-index: 0;
       }
     }
     .descriptionContainer {
-      width: 50%;
-      margin-left: 70px;
+      width: 75%;
+      margin-left: 7px;
       height: 400px;
       h1 {
         font-weight: 900;
         font-size: 2rem;
       }
       p {
-        color: #4d4b4b;
+        color: #fff;
         line-height: 30px;
         font-size: 1.2rem;
         font-weight: 700;
@@ -43,16 +44,16 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 50px;
-      background-color: #ffe73d;
+      background-color: $secondaryColor;
 
       &:after {
         content: "";
         height: 8px;
         width: 25px;
-        background-color: #ffe73d;
+        background-color: $secondaryColor;
         position: absolute;
         border-radius: 10px;
-        transform: translateY(-1px);
+        transform: translateY(0.7px);
       }
     }
     .icons {
@@ -80,9 +81,11 @@
       align-items: flex-start;
       position: relative;
       margin: 10px;
+     
       img {
         margin-top: 5px;
         z-index: 0;
+      
       }
     }
     .descriptionContainer {

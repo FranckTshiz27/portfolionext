@@ -1,5 +1,7 @@
+@import "variable.scss";
 @media (min-width: 1268px) {
   .contact__coordonnee {
+    background-color: $primaryColor;
     box-sizing: border-box;
     p {
       font-weight: 700;
@@ -9,9 +11,9 @@
     justify-content: center;
     width: 100%;
     .contact__coordonnee__content {
-      border-top: 2px solid #ffe73d;
+      border-top: 2px solid rgba($color: $secondaryColor, $alpha: 0.5);
       width: 100%;
-      background-color: #191919;
+      background-color: $primaryColor;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -23,7 +25,7 @@
         justify-content: space-around;
         align-items: center;
         .icons {
-          color: #ffe73d;
+          color: $secondaryColor;
           font-size: 1.3em;
         }
       }
