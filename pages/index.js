@@ -198,12 +198,13 @@ export default function Home({ posts }) {
             <h1>A propos de moi</h1>
             <div className={aproposStyle.apropos__underline}></div>
             <p>
-              Je suis détenteur d'un diplôme de licence en génie informatique,
-              donc ingénieur logiciel. J'ai également fait plusieurs formations
-              qui m'ont permis de maitriser plusieurs langages de programmation
-              dont Java et C#. Je suis actuellement à la Kinshasa Digital
-              Academy pour renforcer mes compétences dans le domaine du
-              développement web et mobile.
+
+
+              Titulaire d'un diplôme de licence en génie informatique de l'université de Kinshasa 
+              et détenteur d'un Bac+2 en développement web et mobile à la Kinshasa Digital Academy;
+              Je maitrise le développement d'application web, mobile et Desktop. Ayant des compétences
+              pointues en HTML, CSS, JAVA, JAVASCRIPT et BASE DE DONNEES; je suis à la recherche de nouveaux challenges pour mettre en 
+              œuvre mon esprit créatif et mon sens de la précision.
             </p>
             <div className="contact__coordonnee__content__links">
               <a href="https://github.com/FranckTshiz27">
@@ -352,7 +353,7 @@ export default function Home({ posts }) {
               <div
                 className={competenceStyle.competence__container__item__header}
               >
-                <h3>PHP</h3>
+                <h3>TYPESCRIPT</h3>
                 <strong>50%</strong>
               </div>
               <div className={competenceStyle.niveau}>
@@ -375,7 +376,7 @@ export default function Home({ posts }) {
                 className={competenceStyle.competence__container__item__header}
               >
                 <h3>CSHARP</h3>
-                <strong>60%</strong>
+                <strong>50%</strong>
               </div>
               <div className={competenceStyle.niveau}>
                 <div className={competenceStyle.niveauCsharp}></div>
