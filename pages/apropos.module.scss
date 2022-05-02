@@ -122,12 +122,12 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 50px;
-      background-color: #ffe73d;
+      background-color: $secondaryColor;
       &:after {
         content: "";
         height: 8px;
         width: 25px;
-        background-color: #ffe73d;
+        background-color: $secondaryColor;
         position: absolute;
         border-radius: 10px;
         transform: translateY(-1px);

@@ -10,7 +10,7 @@
       position: absolute;
       height: 1px;
       width: 1000px;
-      background-color: rgba($color: #ffe73d, $alpha: 0.3);
+      background-color: rgba($color: $secondaryColor, $alpha: 0.3);
       transform: translate(50px, 550px);
       z-index: 1;
     }
@@ -18,7 +18,7 @@
     .realisation__separator {
       width: 500px;
       height: 1px;
-      background-color: #ffe73d;
+      background-color: $secondaryColor;
     }
     .realisation__title {
       color: #fff;
@@ -54,7 +54,7 @@
     .realisation__separator {
       width: 500px;
       height: 1px;
-      background-color: #ffe73d;
+      background-color: $secondaryColor;
     }
     .realisation__title {
       color: #fff;

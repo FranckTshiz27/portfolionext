@@ -57,7 +57,7 @@
         content: "";
         height: 6px;
         width: 25px;
-        background-color: #ffe73d;
+        background-color: $secondaryColor;
         position: absolute;
         border-radius: 10px;
       }
@@ -101,9 +101,9 @@
       width: 60%;
       background: linear-gradient(
         0.25turn,
-        rgba(#ffe73d, 0.2),
-        rgba(#ffe73d, 0.4),
-        #ffe73d
+        rgba($secondaryColor, 0.2),
+        rgba($secondaryColor, 0.4),
+        $secondaryColor
       );
       transform: translateY(20px);
     }
@@ -123,7 +123,7 @@
         content: "";
         height: 6px;
         width: 25px;
-        background-color: #ffe73d;
+        background-color: $secondaryColor;
         position: absolute;
         border-radius: 10px;
       }

@@ -167,9 +167,9 @@
       width: 60%;
       background: linear-gradient(
         0.25turn,
-        rgba(#ffe73d, 0.2),
-        rgba(#ffe73d, 0.4),
-        #ffe73d
+        rgba($secondaryColor, 0.2),
+        rgba($secondaryColor, 0.4),
+        $secondaryColor
       );
       transform: translateY(100px);
     }
@@ -186,7 +186,7 @@
         content: "";
         height: 6px;
         width: 25px;
-        background-color: #ffe73d;
+        background-color: $secondaryColor;
         position: absolute;
         border-radius: 10px;
       }
@@ -222,7 +222,7 @@
           justify-content: space-between;
           margin-bottom: -6px;
           strong {
-            color: #ffe73d;
+            color: $secondaryColor;
             font-weight: lighter;
             font-size: 1rem;
           }
@@ -241,38 +241,38 @@
           .niveauHtml {
             width: 70%;
             height: 5px;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
             border-radius: 50px 0px 0px 50px;
           }
           .niveauCss {
             width: 70%;
             height: 5px;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
           }
           .niveauJs {
             width: 65%;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
             height: 5px;
           }
           .niveauJava {
             width: 60%;
             height: 10px;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
           }
           .niveauCsharp {
             width: 60%;
             height: 5px;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
           }
           .niveauDb {
             width: 60%;
             height: 5px;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
           }
           .niveauPhp {
             width: 50%;
             height: 5px;
-            background-color: #ffe73d;
+            background-color: $secondaryColor;
           }
         }
       }

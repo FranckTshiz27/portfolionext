@@ -1,3 +1,4 @@
+@import "variable.scss";
 @media screen and (min-width: 1268px) {
   html,
   body {
@@ -25,7 +26,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #272727;
+    background-color: $primaryColor;
     scroll-behavior: smooth;
     font-family: "Josefin Sans";
     z-index: auto;
