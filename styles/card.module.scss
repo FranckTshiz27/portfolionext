@@ -75,7 +75,6 @@ $gray-lightest: lighten($gray-lighter, 4%);
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  background-color: yellowgreen;
   filter: contrast(70%);
   overflow: hidden;
   position: relative;
@@ -126,7 +125,6 @@ $gray-lightest: lighten($gray-lighter, 4%);
 
 .projectImage {
   margin: 0;
-  background-color: yellowgreen;
 }
 
 @media screen and (max-width: 768px) {
@@ -199,7 +197,6 @@ $gray-lightest: lighten($gray-lighter, 4%);
     background-size: cover;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    background-color: yellowgreen;
     filter: contrast(70%);
     overflow: hidden;
     position: relative;
@@ -250,6 +247,5 @@ $gray-lightest: lighten($gray-lighter, 4%);
   
   .projectImage {
     margin: 0;
-    background-color: yellowgreen;
   }
 }
