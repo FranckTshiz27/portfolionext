@@ -115,14 +115,17 @@
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-
+    background-color: $thirdColor;
+    & h2{
+      color: #fff;
+    }
     .realisation__separator {
       width: 500px;
       height: 1px;
       background-color: $secondaryColor;
     }
     .realisation__title {
-      color: #000;
+      color: #fff;
       font-weight: 500;
       font-size: 2em;
       line-height: 0.5;
@@ -135,8 +138,6 @@
 
     .realisation__content {
       display: flex;
-      justify-content: center;
-      justify-content: center;
       flex-wrap: wrap;
     }
   }
